@@ -1,0 +1,100 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
+  return (
+    <section
+      className="footer py-10 bg-[#161C2D] text-white px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24"
+    >
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:justify-between gap-8 md:gap-[100px]">
+        {/* Logo & Socials */}
+        <div data-aos="fade-right" data-aos-delay="100" className="flex-1 md:flex-none">
+          <span className="text-xl font-[700]">
+            RAFAZ <span className="text-[#473BF0]">WEB</span>
+          </span>
+          <p className="mt-4">We design digital prestige.</p>
+          <ul className="flex gap-5 mt-10 flex-wrap">
+            {/** Facebook */}
+            <li>
+              <svg
+                className="w-8 h-8 fill-current hover:text-[#473BF0] hover:scale-110 transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/>
+              </svg>
+            </li>
+            {/** Twitter */}
+            <li>
+              <svg
+                className="w-8 h-8 fill-current hover:text-[#473BF0] hover:scale-110 transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L258.2 544L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96z"/>
+              </svg>
+            </li>
+            {/** Instagram */}
+            <li>
+              <svg
+                className="w-10 h-10 fill-current hover:text-[#473BF0] hover:scale-110 transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path d="M290.4 275.7C274 286 264.5 304.5 265.5 323.8C266.6 343.2 278.2 360.4 295.6 368.9C313.1 377.3 333.8 375.5 349.6 364.3C366 354 375.5 335.5 374.5 316.2C373.4 296.8 361.8 279.6 344.4 271.1C326.9 262.7 306.2 264.5 290.4 275.7zM432.7 207.3C427.5 202.1 421.2 198 414.3 195.3C396.2 188.2 356.7 188.5 331.2 188.8C327.1 188.8 323.3 188.9 320 188.9C316.7 188.9 312.8 188.9 308.6 188.8C283.1 188.5 243.8 188.1 225.7 195.3C218.8 198 212.6 202.1 207.3 207.3C202 212.5 198 218.8 195.3 225.7C188.2 243.8 188.6 283.4 188.8 308.9C188.8 313 188.9 316.8 188.9 320C188.9 323.2 188.9 327 188.8 331.1C188.6 356.6 188.2 396.2 195.3 414.3C198 421.2 202.1 427.4 207.3 432.7C212.5 438 218.8 442 225.7 444.7C243.8 451.8 283.3 451.5 308.8 451.2C312.9 451.2 316.7 451.1 320 451.1C323.3 451.1 327.2 451.1 331.4 451.2C356.9 451.5 396.2 451.9 414.3 444.7C421.2 442 427.4 437.9 432.7 432.7C438 427.5 442 421.2 444.7 414.3C451.9 396.3 451.5 356.9 451.2 331.3C451.2 327.1 451.1 323.2 451.1 319.9C451.1 316.6 451.1 312.8 451.2 308.5C451.5 283 451.9 243.6 444.7 225.5C442 218.6 437.9 212.4 432.7 207.1L432.7 207.3zM365.6 251.8C383.7 263.9 396.2 282.7 400.5 304C404.8 325.3 400.3 347.5 388.2 365.6C382.2 374.6 374.5 382.2 365.6 388.2C356.7 394.2 346.6 398.3 336 400.4C314.7 404.6 292.5 400.2 274.4 388.1C256.3 376 243.8 357.2 239.5 335.9C235.2 314.6 239.7 292.4 251.7 274.3C263.7 256.2 282.6 243.7 303.9 239.4C325.2 235.1 347.4 239.6 365.5 251.6L365.6 251.6z"/>
+              </svg>
+            </li>
+            {/** LinkedIn */}
+            <li>
+              <svg
+                className="w-8 h-8 fill-current hover:text-[#473BF0] hover:scale-110 transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        {/* Company Links */}
+        {[
+          { title: "Company", links: ["Company", "About Us", "Contact Us"] },
+          { title: "Product", links: ["Product", "Features", "Help Desk", "Support"] },
+          { title: "Services", links: ["Services", "Web development", "UI/UX design", "SEO for Business", "Branding", "UI Design"] },
+          { title: "Legal", links: ["Legal", "Privacy policy", "Terms & Conditions"] },
+        ].map((section, idx) => (
+          <div
+            key={idx}
+            className="flex-1 md:flex-none"
+            data-aos="fade-left"
+            data-aos-delay={200 + idx * 100}
+          >
+            <ul className="font-gentium space-y-2">
+              {section.links.map((link, lidx) => (
+                <li key={lidx} className="hover:text-gray-500 transition-colors duration-300">
+                  <a href={`#${link.replace(/\s+/g, "")}`}>{link}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* Footer bottom */}
+      <div className="text-center mt-10 space-y-2" data-aos="fade-up" data-aos-delay="600">
+        <p className="font-[700]">&copy; {currentYear} Rafaz Web</p>
+        <p>Hand Crafted with passion and precision. Serving Brands across Nigeria and beyond.</p>
+      </div>
+    </section>
+  );
+};
+
+export default Footer;
