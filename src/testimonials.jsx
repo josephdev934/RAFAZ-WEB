@@ -14,10 +14,13 @@ const Testimonials = () => {
   return (
     <>
       <section className="testimonials-section bg-white py-16 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-48">
-        <h2 className="text-3xl sm:text-4xl md:text-4xl mb-6 text-center" data-aos="fade-down">
+        <h2
+          className="text-3xl sm:text-4xl md:text-4xl mb-6 text-center font-open-sans"
+          data-aos="fade-down"
+        >
           <span className="font-bold">What people say about us</span>
-          <p className="text-[20px] text-gray-700 mt-2 font-gentium">
-            With lots of unique blocks, you can easily build a page without coding, <br />
+          <p className="text-[18px] text-gray-700 mt-2 font-open-sans">
+            With lots of unique blocks, you can easily build a page without coding. <br />
             Build your next landing page in minutes!
           </p>
         </h2>
@@ -28,10 +31,10 @@ const Testimonials = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p className="mb-10 sm:mb-6 text-base sm:text-lg">
+            <p className="mb-10 sm:mb-6 text-base sm:text-lg font-open-sans">
               "You made it so simple. My new site is so much faster and easier to work with than my old site."
             </p>
-            <p className="font-bold text-lg mt-10">Web Developer</p>
+            <p className="font-bold text-lg mt-10 font-open-sans">Web Developer</p>
           </div>
 
           <div
@@ -39,10 +42,10 @@ const Testimonials = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <p className="mb-4 sm:mb-6 text-base sm:text-lg">
+            <p className="mb-4 sm:mb-6 text-base sm:text-lg font-open-sans">
               "Simply the best. Better than all the rest. I'd recommend this for local products to beginners and advanced users."
             </p>
-            <p className="font-bold text-lg">Teacher (with side hustle)</p>
+            <p className="font-bold text-lg font-open-sans">Teacher (with side hustle)</p>
           </div>
 
           <div
@@ -50,21 +53,32 @@ const Testimonials = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <p className="mb-4 sm:mb-6 text-base sm:text-lg">
+            <p className="mb-4 sm:mb-6 text-base sm:text-lg font-open-sans">
               "Tun da Rafaz web suka hada mun website, sai ga ciniki online, da inya gaya ma." <br />
               (Since Rafaz web built my website, my online sales have been growing fast)
             </p>
-            <p className="font-bold text-lg">Business Man</p>
+            <p className="font-bold text-lg font-open-sans">Business Man</p>
           </div>
         </div>
       </section>
 
-      <p className="bg-[#473BF0] text-white w-full text-center py-5 text-xl" data-aos="fade-up" data-aos-delay="400">
-        Ready to get started?{" "}
-        <a className="border bg-white text-black px-3 py-2 rounded-[10px] text-[15px]" href="">
+      {/* Footer CTA */}
+      <div
+        className="bg-[#473BF0] text-white w-full text-center py-10 px-4 text-xl"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <p className="mb-6 font-open-sans">
+          Ready to get started?
+        </p>
+
+        <a
+          className="inline-block bg-white text-[#473BF0] font-semibold px-6 py-3 rounded-lg text-base sm:text-lg hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 transform hover:scale-105"
+          href="#contact"
+        >
           Get a Free Consultation
         </a>
-      </p>
+      </div>
     </>
   );
 };

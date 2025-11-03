@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Img1 from "./assets/Rectangle-4.png";
-import Img2 from "./assets/Rectangle-3.png";
-import Img3 from "./assets/Rectangle-2.png";
-import Img4 from "./assets/Rectangle-1.png";
-import Img5 from "./assets/Rectangle.png";
+import Img1 from "./assets/Rectangle-4.png.png";
+import Img2 from "./assets/Rectangle-3.png.png";
+import Img3 from "./assets/Rectangle-2.png.png";
+import Img4 from "./assets/Rectangle-1.png.png";
+import Img5 from "./assets/Rectangle.png.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

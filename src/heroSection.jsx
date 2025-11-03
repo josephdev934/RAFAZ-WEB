@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Img1 from "../src/assets/Frame-1.png";
+import Img1 from "../src/assets/Frame-1.png.png";
 import NavBar from "./navBar";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,7 +17,7 @@ const HeroSection = () => {
     <>
       <NavBar />
       <section
-        className="w-full flex items-center text-center pt-16 md:pt-24 pb-4 md:pb-8 bg-cover bg-center bg-no-repeat"
+        className="w-full min-h-screen flex items-center text-center font-opensans pt-10 md:pt-5 pb-2 md:pb-2 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Img1})` }}
       >
         <div className="w-full px-[5vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[12vw]">

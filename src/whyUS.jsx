@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Img1 from "./assets/man-standing.png";
+import Img1 from "./assets/man-standing.png.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +18,7 @@ const WhyUS = () => {
       {/* Image with fade-right animation */}
       <img
         data-aos="fade-right"
-        className="w-full sm:w-[80%] md:w-[60%] lg:w-[450px] xl:w-[650px] xl:h-[500px] 2xl:w-[650px] h-auto rounded-[10px] object-cover shadow-lg"
+        className="w-full sm:w-[80%] md:w-[60%] lg:w-[450px] xl:w-[650px] xl:h-[500px] 2xl:w-[650px] h-auto rounded-[10px] object-cover "
         src={Img1}
         alt="Why Choose Us"
       />

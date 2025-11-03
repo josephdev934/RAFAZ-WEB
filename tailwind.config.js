@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gentium: ['"Gentium Book Plus"', 'serif'], // add this line
+        opensans: ['"Open Sans"', 'sans-serif'], // Updated to Open Sans
       },
     },
   },
