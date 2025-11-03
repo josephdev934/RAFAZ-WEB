@@ -17,7 +17,7 @@ const HeroSection = () => {
     <>
       <NavBar />
       <section
-        className="w-full min-h-screen flex items-center text-center font-opensans pt-10 md:pt-5 pb-2 md:pb-2 bg-cover bg-center bg-no-repeat"
+        className="w-full flex items-center text-center font-opensans pt-16 md:pt-24 pb-10 md:pb-10 bg-cover  bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Img1})` }}
       >
         <div className="w-full px-[5vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[12vw]">
