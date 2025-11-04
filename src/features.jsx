@@ -25,10 +25,10 @@ const Features = () => {
 
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between h-full px-[6vw] py-[10vh] gap-16 lg:gap-[10vw] xl:gap-[12vw] 2xl:gap-[15vw] text-white">
           {/* Left Side */}
-          <div data-aos="fade-up" className="max-w-[600px] text-center lg:text-left">
+          <div data-aos="fade-up" className="max-w-[650px] text-center lg:text-left">
             <h2 className="text-[] sm:text-3xl md:text-3xl xl:text-4xl font-bold mb-6 leading-snug font-gentium">
-              We craft high-performance websites that attract, convert, and <br /> scale,
-              built with strategy, precision, and soul.
+              We craft high-performance websites that attract, convert, and  scale. <br />
+              Built with strategy, precision, and soul.
             </h2>
             <a
               data-aos="fade-up"

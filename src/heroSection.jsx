@@ -26,7 +26,7 @@ const HeroSection = () => {
             data-aos="fade-up"
             className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-gentium font-bold mb-6 leading-snug"
           >
-            Designing digital experiences that drives results.
+            Designing digital experiences that drive results.
           </h1>
 
           <p
