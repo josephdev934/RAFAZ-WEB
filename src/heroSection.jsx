@@ -17,8 +17,8 @@ const HeroSection = () => {
     <>
       <NavBar />
       <section
-        className="w-full flex items-center text-center font-opensans pt-16 md:pt-24 pb-10 md:pb-10 bg-cover bg-center bg-no-repeat
-                   min-h-screen"
+        className="w-full flex items-center text-center font-opensans bg-cover bg-center bg-no-repeat
+                   min-h-[65vh] sm:min-h-[90vh] md:min-h-screen"
         style={{ backgroundImage: `url(${Img1})` }}
       >
         <div className="w-full max-w-none px-[4vw] sm:px-[6vw] md:px-[8vw] lg:px-0 xl:px-0 2xl:px-0 text-center">
@@ -36,7 +36,7 @@ const HeroSection = () => {
           >
             At <span className="font-semibold text-[#473BF0]">RAFAZ Web</span>, we build
             high-performing websites that turn visitors{" "}
-            <br className="hidden sm:block" /> into clients — fast, functional, and built for growth.
+            into clients — <br className="hidden sm:block" /> fast, functional, and built for growth.
           </p>
 
           <a
