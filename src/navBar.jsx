@@ -4,6 +4,15 @@ import { Menu, X } from "lucide-react"; // for hamburger + close icons
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Smooth scroll function
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // Close mobile menu after click
+    }
+  };
+
   return (
     <nav className="navbar flex justify-between items-center px-6 py-4 max-w-full mx-auto">
       {/* Logo */}
@@ -13,17 +22,17 @@ const NavBar = () => {
 
       {/* Desktop Links */}
       <ul className="navbar-links hidden md:flex gap-6 items-center">
-        <li><a href="#home" className="hover:text-[#473BF0]">Home</a></li>
-        <li><a href="#about" className="hover:text-[#473BF0]">About</a></li>
-        <li><a href="#services" className="hover:text-[#473BF0]">Services</a></li>
-        <li><a href="#contact" className="hover:text-[#473BF0]">Contact</a></li>
+        <li><button onClick={() => scrollToSection("home")} className="hover:text-[#473BF0]">Home</button></li>
+        <li><button onClick={() => scrollToSection("about")} className="hover:text-[#473BF0]">About</button></li>
+        <li><button onClick={() => scrollToSection("services")} className="hover:text-[#473BF0]">Services</button></li>
+        <li><button onClick={() => scrollToSection("contact")} className="hover:text-[#473BF0]">Contact</button></li>
         <li>
-          <a
+          <button
+            onClick={() => scrollToSection("quote")}
             className="border rounded-[10px] bg-[#473BF0] hover:bg-[#362FCC] text-white py-2 px-4"
-            href="#quote"
           >
             Get A Free Quote
-          </a>
+          </button>
         </li>
       </ul>
 
@@ -38,13 +47,13 @@ const NavBar = () => {
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden border-t border-gray-200 z-50">
           <ul className="flex flex-col items-center gap-4 py-6">
-            <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-            <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
-            <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <li><button onClick={() => scrollToSection("home")}>Home</button></li>
+            <li><button onClick={() => scrollToSection("about")}>About</button></li>
+            <li><button onClick={() => scrollToSection("services")}>Services</button></li>
+            <li><button onClick={() => scrollToSection("contact")}>Contact</button></li>
             <li>
               <a
-                href="#quote"
+                href="https://wa.link/n13cpz"
                 className="border rounded-[10px] bg-[#473BF0] hover:bg-[#362FCC] text-white py-2 px-4"
                 onClick={() => setIsOpen(false)}
               >

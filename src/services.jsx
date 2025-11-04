@@ -63,7 +63,7 @@ const Services = () => {
             />
             <p className="mb-4 text-sm sm:text-base">{service.desc}</p>
             <div className="flex items-center gap-2 group" data-aos="fade-left" data-aos-delay={index * 150}>
-              <a className="text-[#473BF0] flex items-center gap-2 text-sm sm:text-base" href="">
+              <a className="text-[#473BF0] flex items-center gap-2 text-sm sm:text-base" href="https://wa.link/n13cpz">
                 Learn more
                 <svg
                   className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"

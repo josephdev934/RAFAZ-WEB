@@ -74,7 +74,7 @@ const Testimonials = () => {
 
         <a
           className="inline-block bg-white text-[#473BF0] font-semibold px-6 py-3 rounded-lg text-base sm:text-lg hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 transform hover:scale-105"
-          href="#contact"
+          href="https://wa.link/n13cpz"
         >
           Get a Free Consultation
         </a>

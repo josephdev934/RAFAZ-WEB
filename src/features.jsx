@@ -14,7 +14,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section id="features" className="w-full ">
+    <section id="about" className="w-full ">
       {/* Background Section with Overlay */}
       <div
         className="relative bg-cover bg-center bg-no-repeat min-h-[90vh]"
@@ -33,7 +33,7 @@ const Features = () => {
             <a
               data-aos="fade-up"
               data-aos-delay="200"
-              href="#services"
+              href="https://wa.link/n13cpz"
               className="inline-block bg-[#473BF0] hover:bg-[#362FCC] text-white text-sm sm:text-base md:text-lg xl:text-xl py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition duration-300"
             >
               Build Your Website

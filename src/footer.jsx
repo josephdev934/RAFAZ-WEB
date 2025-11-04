@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <section
-      className="footer py-10 bg-[#161C2D] text-white px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24"
+       id="contact" className="footer py-10 bg-[#161C2D] text-white px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24"
     >
       <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:justify-between gap-8 md:gap-[100px]">
         {/* Logo & Socials */}
