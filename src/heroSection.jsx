@@ -17,16 +17,16 @@ const HeroSection = () => {
     <>
       <NavBar />
       <section
-        className="w-full flex items-center text-center font-opensans pt-16 md:pt-24 pb-10 md:pb-10 bg-cover  bg-center bg-no-repeat"
+        className="w-full flex items-center text-center font-opensans pt-16 md:pt-24 pb-10 md:pb-10 bg-cover bg-center bg-no-repeat
+                   min-h-screen"
         style={{ backgroundImage: `url(${Img1})` }}
       >
-        <div className="w-full px-[5vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[12vw]">
+        <div className="w-full max-w-none px-[4vw] sm:px-[6vw] md:px-[8vw] lg:px-0 xl:px-0 2xl:px-0 text-center">
           <h1
             data-aos="fade-up"
             className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-gentium font-bold mb-6 leading-snug"
           >
-            Designing digital experiences that{" "}
-            <br className="hidden sm:block" /> drives results.
+            Designing digital experiences that drives results.
           </h1>
 
           <p
