@@ -1,4 +1,4 @@
-import NavBar from "./navBar"
+
 import HeroSection from "./heroSection"
 import Features from "./features"
 import Services from "./services"

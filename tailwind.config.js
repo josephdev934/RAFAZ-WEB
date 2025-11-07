@@ -12,4 +12,7 @@ module.exports = {
     },
   },
   plugins: [],
+   darkMode: "class",
 }
+// tailwind.config.js
+

@@ -14,7 +14,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section id="about" className="w-full ">
+    <section id="about" className="w-full dark:bg-gray-900 text-black dark:text-white  ">
       {/* Background Section with Overlay */}
       <div
         className="relative bg-cover bg-center bg-no-repeat min-h-[90vh]"
@@ -28,7 +28,7 @@ const Features = () => {
           <div data-aos="fade-up" className="max-w-[650px] text-center lg:text-left">
             <h2 className="text-[] sm:text-3xl md:text-3xl xl:text-4xl font-bold mb-6 leading-snug font-gentium">
               We craft high-performance websites that attract, convert, and  scale. <br />
-              Built with strategy, precision, and soul.
+              Built with strategy, precision and soul.
             </h2>
             <a
               data-aos="fade-up"

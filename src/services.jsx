@@ -18,7 +18,7 @@ const Services = () => {
 
   const servicesFirstRow = [
     {
-      title: "Web Design & Development",
+      title: "Web Design & App Development",
       img: Img1,
       desc: "We design sleek, modern websites tailored to your brand and optimized for conversions. Built for speed, mobile, and impact.",
     },
@@ -52,7 +52,7 @@ const Services = () => {
       key={index}
       data-aos="fade-up"
       data-aos-delay={index * 100}
-      className="flex flex-col justify-between w-full sm:w-[48%] md:w-[45%] lg:w-[30%] max-w-[400px] h-full"
+      className="flex flex-col justify-between w-full sm:w-[48%] md:w-[45%] lg:w-[30%] max-w-[400px] h-full "
     >
       <div>
         <p className="mb-3 text-xl sm:text-2xl font-[700] font-gentium">

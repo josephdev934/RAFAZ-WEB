@@ -1,22 +1,23 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // for hamburger + close icons
+import { Menu, X } from "lucide-react";
+import IMG1 from "./assets/RAFAZ-WEB-LOGO-BLUE.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Smooth scroll function
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // Close mobile menu after click
+      setIsOpen(false);
     }
   };
 
   return (
-    <nav className="navbar flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+    <nav className="navbar flex justify-between items-center w-full px-4 md:px-6 py-4 mx-auto overflow-hidden">
       {/* Logo */}
-      <div className="navbar-logo text-2xl font-bold">
+      <div className="navbar-logo flex gap-2 text-2xl font-bold">
+        <img className="w-10 h-10" src={IMG1} alt="Logo" />
         RAFAZ <span className="text-[#473BF0]">WEB</span>
       </div>
 
@@ -36,7 +37,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      {/* Hamburger Icon (Mobile) */}
+      {/* Hamburger (Mobile) */}
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 focus:outline-none">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -45,7 +46,7 @@ const NavBar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden border-t border-gray-200 z-50">
+        <div className="absolute top-16 left-0 w-screen bg-white shadow-md md:hidden border-t border-gray-200 z-50">
           <ul className="flex flex-col items-center gap-4 py-6">
             <li><button onClick={() => scrollToSection("home")}>Home</button></li>
             <li><button onClick={() => scrollToSection("about")}>About</button></li>
